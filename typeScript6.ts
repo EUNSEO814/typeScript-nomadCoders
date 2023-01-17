@@ -1,4 +1,4 @@
-// typeScript
+// interface
 
 // abstract class User {
 //   constructor (
@@ -80,6 +80,11 @@
 //   sayHi: (name) => "string"
 // })
 
+// type vs interface
+
+// ----------------------------------------------------------------
+// type
+
 // type PlayerA = {
 //   name: string
 // }
@@ -92,7 +97,9 @@
 //   name: "emma",
 //   lastName: "xx"
 // }
-//////
+
+// ----------------------------------------------------------------
+// interface
 
 // interface PlayerB {
 //   name: string
@@ -107,6 +114,7 @@
 //   lastName: "xx"
 // }
 
+// ----------------------------------------------------------------
 // interface PlayerB {
 //   name: string
 // }
@@ -135,11 +143,11 @@
 //   firstName: string
 // }
 
-// // class User implements PlayerA {
-// //   constructor(
-// //     public firstName: string
-// //   ) { }
-// // }
+// class User implements PlayerA {
+//   constructor(
+//     public firstName: string
+//   ) { }
+// }
 
 // class User implements PlayerB {
 //   constructor(
