@@ -1,1 +1,1 @@
-# typeScriptStydy
+# typeScript
