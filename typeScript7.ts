@@ -6,13 +6,13 @@ interface SStorage<T> {
 
 class LocalStorage<T> {
   private storage: SStorage<T> = {};
-  set(key: string, value: T) {
+  setItem(key: string, value: T) {
     this.storage[key] = value;
   }
-  remove(key: string) {
+  clearItem(key: string) {
     delete this.storage[key];
   }
-  get(key: string): T {
+  getItem(key: string): T {
     return this.storage[key];
   }
   clear() {
@@ -22,10 +22,10 @@ class LocalStorage<T> {
 
 const stringsStorage = new LocalStorage<string>();
 
-stringsStorage.get("ket");
-stringsStorage.set("hello", "how are you");
+stringsStorage.getItem("ket");
+stringsStorage.setItem("hello", "how are you");
 
 const booleansStorage = new LocalStorage<boolean>();
 
-booleansStorage.get("xxx");
-booleansStorage.set("hello", true);
+booleansStorage.getItem("xxx");
+booleansStorage.setItem("hello", true);
