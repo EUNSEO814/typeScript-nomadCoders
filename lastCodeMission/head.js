@@ -1,6 +1,6 @@
 // JSDoc 파일들의 주석 부분들을 타입스크립트 타입 정의로 바꾸는 것
 
-// 1. head
+// 1. head -
 /**
  * Gets the first element of `array`.
  *
